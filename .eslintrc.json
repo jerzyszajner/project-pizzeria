@@ -9,14 +9,28 @@
         "sourceType": "module"
     },
     "rules": {
+        "indent": [
+            "error",
+            2
+        ],
         "linebreak-style": [
-            "off"
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {"allowTemplateLiterals": true}
+        ],
+        "semi": [
+            "error",
+            "always"
         ],
         "no-console": [
             "off"
         ]
     },
     "globals": {
-      "Handlebars": false
-    }
+        "Handlebars": false
+      }
 }
