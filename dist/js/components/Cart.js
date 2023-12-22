@@ -143,7 +143,7 @@ class Cart {
       products: [],
     };
 
-    console.log('payload', payload);
+    // console.log('payload', payload);
 
     for (let prod of thisCart.products) {
       payload.products.push(prod.getData());
