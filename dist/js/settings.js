@@ -3,12 +3,14 @@ export const select = {
     menuProduct: '#template-menu-product',
     cartProduct: '#template-cart-product',
     bookingWidget: '#template-booking-widget', // CODE ADDED
+    homeWidget: '#template-home-widget', // CODE ADDED
   },
   containerOf: {
     menu: '#product-list',
     cart: '#cart',
     pages: '#pages', // CODE ADDED
     booking: '.booking-wrapper', // CODE ADDED
+    home: '.home-wrapper', // CODE ADDED
   },
   all: {
     menuProducts: '#product-list > .product',
@@ -38,6 +40,7 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
+
   },
   booking: { // CODE ADDED
     peopleAmount: '.people-amount',
@@ -51,6 +54,13 @@ export const select = {
   nav: { // CODE ADDED
     links: '.main-nav a',
   },
+  home: { // CODE ADDED
+    order: '.order-online',
+    book: '.book-table',
+    options: '.options a',
+    carousel: '.main-carousel',
+  },
+
   cart: {
     productList: '.cart__order-summary',
     toggleTrigger: '.cart__summary',
@@ -127,4 +137,5 @@ export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
   bookingWidget: Handlebars.compile(document.querySelector(select.templateOf.bookingWidget).innerHTML), // CODE ADDED
+  homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML), // CODE ADDED
 };
